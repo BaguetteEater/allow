@@ -9,6 +9,7 @@ Cette expérience à pour vocation de construire ainsi une identité numérique 
 __Participants :__
 
 Ninon Lize-Masclef
+
 Florine Robitaille
 Edmond Giraud
 Arthur Martello
