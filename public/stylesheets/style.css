@@ -7,6 +7,7 @@ body {
     background-size: cover;
     height: 100vh;
     margin: 0;
+    padding: 0;
     bottom: 0;
 }
 
@@ -28,8 +29,9 @@ h1{
     background-image: url("../images/AllowLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 150px;
+    height: 180px;
     margin-left: 35%;
+    margin-top: 3%;
     
 }
 
@@ -44,6 +46,12 @@ h1{
     color:aliceblue;
     font-family: 'PT Mono', monospace;
     text-decoration:none;
+    margin-left: 43%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    box-shadow: 0px 170px 20px #020214;
+    
 }
 
 /*
@@ -57,8 +65,11 @@ h1{
     background-image: url("../images/Grille-sol.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 500px;
+    height: 300px;
+    width: 100%;
     bottom: 0;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -82,16 +93,17 @@ footer{
 }
 
 #col-footer ul{
-        display: block;
+        display: flex;
         width: 100%;
         padding:0px
 }
 
 #col-footer ul li{
-        display: inline-block;
+/*        display: inline-block;*/
         width: 30% ;
         margin-left: 1%;
         margin-right: 1%;
+        list-style: none;
 }
 
 
@@ -102,8 +114,8 @@ footer{
 .window-container {
     text-align: center;
     position: relative;
-    display: inline-block;
-    width: 700px;
+    display: block;
+    width: 700px; 
 }
 
 .window {
@@ -246,7 +258,15 @@ input[type=radio]:not(old):checked + label > span:before {
 }
 
 /******************** BOX ********************/
-#Box ul li{
-    display: inline-block;
-       
+
+#Box ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+        
+}
+
+/******************** PAGE CREA ********************/
+#intro{
+    color: aliceblue;
 }
