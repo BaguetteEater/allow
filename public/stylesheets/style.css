@@ -1,15 +1,18 @@
 body {
-    padding: 50px;
+/*    padding: 50px;*/
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 /*    font-family: 'PT Mono', monospace;*/
     background-image:radial-gradient(#0a143c, #0f0f1e);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin: 0;
+    bottom: 0;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
+    text-decoration: none;
 }
 
 
@@ -22,28 +25,97 @@ h1{
 
 /******************** LOGO ********************/
 #logo{
+    background-image: url("../images/AllowLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    margin-left: 35%;
     
 }
 
-/******************** END LOGO ********************/
+.btn-Start a {
+    display:block;
+    width:150px;
+    border-radius: 10px;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    background:linear-gradient(#8a28d9, #fb5ffd) no-repeat;
+    color:aliceblue;
+    font-family: 'PT Mono', monospace;
+    text-decoration:none;
+}
+
+/*
+.btn-Start a:hover {
+    background:url(images/bouton-noir-2.png) no-repeat;
+}
+*/
+
+/******************** GRILLE-SOL ********************/
+#grille-sol{
+    background-image: url("../images/Grille-sol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    bottom: 0;
+    
+}
+
+
+/******************** FOOTER ********************/
+
+footer{
+    color: aliceblue;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+
+#col-footer{
+    display:block; 
+    position:relative;
+    bottom: 0;
+    margin-left: 17%;
+    
+}
+
+#col-footer ul{
+        display: block;
+        width: 100%;
+        padding:0px
+}
+
+#col-footer ul li{
+        display: inline-block;
+        width: 30% ;
+        margin-left: 1%;
+        margin-right: 1%;
+}
+
+
 
 
 /******************** WINDOW ********************/
 
 .window-container {
-  text-align: center;
-  position: relative;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 700px;
 }
 
 .window {
-  border-top: 2px solid white;
-  border-right: 2px solid #222;
-  border-bottom: 2px solid #222;
-  border-left: 2px solid white;
-  margin: 20px auto;
-  background: #c0c0c0; 
-  display: inline-block;
-  bottom: 230px;
+    border-top: 2px solid white;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid white;
+    margin: 20px auto;
+    background: #c0c0c0; 
+    display: inline-block;
+    bottom: 230px;
+    width: 70%;
 }
 
 .window-title {
@@ -60,13 +132,14 @@ h1{
 }
 
 .window-body {
-  padding: 0px 90px 20px 100px;
-  font-size: 14px;
-  text-align: left;
+    padding: 0px 90px 20px 100px;
+    font-size: 14px;
+    text-align: left;
 }
 
 .window-body h1{
     color: #000000;
+    margin-bottom: 30px;
 }
 
 .window-input{
@@ -81,7 +154,6 @@ h1{
     
 }
 
-/******************** END WINDOW ********************/
 
 /******************** INPUT & BTN ********************/
 
@@ -173,4 +245,8 @@ input[type=radio]:not(old):checked + label > span:before {
   font-family: helvetica;
 }
 
-/******************** END INPUT & BTN ********************/
+/******************** BOX ********************/
+#Box ul li{
+    display: inline-block;
+       
+}
