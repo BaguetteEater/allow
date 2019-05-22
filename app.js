@@ -22,4 +22,6 @@ app.use((req, res, next) => {
     res.status(404).send('Page introuvable !');
 });
 
-app.listen(3000);
+const port = 3000;
+console.info('Starting Allow on port ' + port + '...');
+app.listen(port);
