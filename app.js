@@ -8,6 +8,9 @@ let indexRouter = require('./routes/index');
 let app = express();
 
 app.use(express.static('public'));
+app.use("/public/images", express.static(__dirname + '/public/images'));
+app.use("/public/javascripts", express.static(__dirname + '/public/javascripts'));
+app.use("/public/stylesheets", express.static(__dirname + '/public/stylesheets'));
 app.use(express.static('views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
