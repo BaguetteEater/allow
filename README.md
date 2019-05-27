@@ -24,12 +24,12 @@ Retourner tous les utilisateurs :
 
 Retourner un utilisateur précis :
 
-`GET /user/:userId`
+`GET /users/:userId`
 
 
 Supprimer un utilisateur précis :
 
-`DELETE /user/:userId`
+`DELETE /users/:userId`
 
 Ajouter un graphic à un utilisateur après sa réponse. Retourne l'utilisateur modifié.
 
