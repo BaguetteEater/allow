@@ -1,0 +1,62 @@
+{
+  "_id": 123456789,
+  "graphics": [
+    {
+      "type": "polygon",
+      "attributes": {
+        "shape": "square",
+        "3D": true,
+        "color": "#FF0000"
+      },
+      "scale": 100,
+      "material": "truc",
+      "coordinates": {
+        "x": 100,
+        "y": 100,
+        "z": 100
+      }
+    },
+    {
+      "type": "word",
+      "attributes": {
+        "word": "exemple-de-mot",
+        "moving": true,
+        "color": "#FF0000"
+      },
+      "scale": 100,
+      "material": "truc",
+      "coordinates": {
+        "x": 100,
+        "y": 100,
+        "z": 100
+      }
+    },
+    {
+      "type": "glow",
+      "attributes": {
+        "color": "#FF0000"
+      },
+      "scale": 100,
+      "material": "truc",
+      "coordinates": {
+        "x": 100,
+        "y": 100,
+        "z": 100
+      }
+    },
+    {
+      "type": "picture",
+      "attributes": {
+        "url": "http://facebook.com/..."
+      },
+      "scale": 100,
+      "material": "truc",
+      "coordinates": {
+        "x": 100,
+        "y": 100,
+        "z": 100
+      }
+    }
+  ],
+  "sounds": []
+}
