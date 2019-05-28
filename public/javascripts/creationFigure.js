@@ -12,10 +12,13 @@ loader.load('./fonts/Roboto_Regular.json', (font) => {
     init();
 
     $("#ok_link_popup").click((event) => {
+
+        let genre = "";
+
         $.ajax({
             method: "POST",
-            url: "",
-            data: {},
+            url: "/question/michel",
+            data: { "questionId" : 1, "attributes" : {"genre" : genre}},
             dataType: "json",
         }).done((figureData) => {
             generateFigures(figureData);
