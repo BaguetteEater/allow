@@ -58,5 +58,20 @@
       }
     }
   ],
-  "sounds": []
+  "sounds": [
+    {
+      "type": "created",
+      "attributes": {
+        "frequency": 2000
+      },
+      "rythm": 4
+    },
+    {
+      "type": "file",
+      "attributes": {
+        "url": "???.mp3"
+      },
+      "rythm": 4
+    }
+  ]
 }

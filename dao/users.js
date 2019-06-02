@@ -20,7 +20,7 @@ exports.insert = (next) => {
                     client.close();
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.warn(error);
                     next(400, 'An error occurred while trying to add a new user');
                 });
         })
@@ -42,7 +42,7 @@ exports.remove = (userId, next) => {
                     client.close();
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.warn(error);
                     next(400, 'An error occurred while trying to delete an user');
                 });
         })
@@ -68,7 +68,7 @@ exports.find = (userId, next) => {
                     client.close();
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.warn(error);
                     next(400, 'An error occurred while trying to get the user');
                     client.close();
                 });
@@ -113,13 +113,12 @@ exports.addGraphic = (userId, graphic, next) => {
                 .collection(dbCollectionName)
                 .findOneAndUpdate(ObjectID(userId), { $addToSet: {graphics: graphic} }, { returnOriginal: false })
                 .then((user) => {
-                    console.log(user);
                     next(200, user.value);
                     client.close();
                 })
                 .catch((error) => {
-                    console.log(error);
-                    next(400, 'An error occurred while trying to update an user');
+                    console.warn(error);
+                    next(400, "An error occurred while trying to update an user's graphics");
                 });
         })
         .catch((error) => {
@@ -131,5 +130,23 @@ exports.addGraphic = (userId, graphic, next) => {
 
 // Met à jour les informations sonores d'un utilisateur
 exports.addSound = function (userId, sound) {
-    // TODO
+    MongoClient.connect(dbUrl)
+        .then((client) => {
+            client
+                .db(dbName)
+                .collection(dbCollectionName)
+                .findOneAndUpdate(ObjectID(userId), { $addToSet: {sounds: sound} }, { returnOriginal: false })
+                .then((user) => {
+                    next(200, user.value);
+                    client.close();
+                })
+                .catch((error) => {
+                    console.warn(error);
+                    next(400, "An error occurred while trying to update an user's sounds");
+                });
+        })
+        .catch((error) => {
+            console.error(error);
+            next(500, 'MongoDB responded: ' + error);
+        });
 };
