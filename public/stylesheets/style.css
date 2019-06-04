@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     bottom: 0;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 a {
@@ -83,6 +83,7 @@ footer{
     position: absolute;
     bottom: 0;
     height: 50px;
+    display: none;
 }
 
 #col-footer{
@@ -154,6 +155,7 @@ footer{
 .window-body h1{
     color: #000000;
     margin-bottom: 30px;
+    
 }
 
 .window-input{
@@ -257,6 +259,48 @@ input[type=radio]:not(old):checked + label > span:before {
   border-left: 2px solid white;
   line-height: 16px;
   font-family: helvetica;
+}
+
+/******************** BTN OUI ET NON ********************/
+
+.btnOui {
+
+  box-shadow: inset 1px 1px white, inset -1px -1px #777;
+    
+  margin: 0;  
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 25px;
+  width: 100px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  border-color: green;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.btnNon {
+
+  box-shadow: inset 1px 1px white, inset -1px -1px #777;
+    
+  margin: 0;  
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 25px;
+  width: 100px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid white;
+  border-color: red;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
 }
 
 
