@@ -129,7 +129,7 @@ exports.addGraphic = (userId, graphic, next) => {
 };
 
 // Met à jour les informations sonores d'un utilisateur
-exports.addSound = function (userId, sound) {
+exports.addSound = function (userId, sound, next) {
     MongoClient.connect(dbUrl)
         .then((client) => {
             client
