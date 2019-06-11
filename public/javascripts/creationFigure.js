@@ -5,52 +5,65 @@ let controls;
 let loadedFont;
 let loader = new THREE.FontLoader();
 
+let userId;
+
 let listFigure = [];
 
-loader.load('./fonts/Roboto_Regular.json', (font) => {
-    loadedFont = font;
-    init();
+let createUser = () => {
+    $.ajax({
+        method: "POST",
+        url: "/add",
+        dataType: "json"
+    }).done((user) => {
+        userId = user._id;
+    })
+};
 
-    $("#ok_link_popup").click((event) => {
+loader.load('./fonts/Roboto_Regular.json', (font) => {
+    init();
+    loadedFont = font;
+    createUser();
+
+    $("#ok_link_popup1").click((event) => {
+        console.log("coucou");
 
         let genre = "";
 
         $.ajax({
             method: "POST",
-            url: "/question/michel",
+            url: "/question/"+userId,
             data: { "questionId" : 1, "attributes" : {"genre" : genre}},
             dataType: "json",
         }).done((figureData) => {
+            console.log(figureData);
             generateFigures(figureData);
             $("#question1").hide();
         });
-        generateFigures(JSON.parse('{"_id": 123456789,"graphics": [{"type": "polygon","attributes": {"shape": "square","3D": true,"color": "#FF0000"},"scale": 100,"material": "truc","coordinates": {"x": 5,"y": -4,"z": -6}}, '
-        +'{"type": "word","attributes": {"word": "Allow c\'est vraiment cool","moving": true,"color": "#00FF00"}, "scale": 100, "material": "truc","coordinates": {"x": -3,"y": 0.5,"z": -2}}]}'));
+        //generateFigures(JSON.parse('{"_id": 123456789,"graphics": [{"type": "polygon","attributes": {"shape": "square","3D": true,"color": "#FF0000"},"scale": 100,"material": "truc","coordinates": {"x": 5,"y": -4,"z": -6}}, '
+        //+'{"type": "word","attributes": {"word": "Allow c\'est vraiment cool","moving": true,"color": "#00FF00"}, "scale": 100, "material": "truc","coordinates": {"x": -3,"y": 0.5,"z": -2}}]}'));
         $("#question1").hide();
     });
-
 });
 
 let init = () => {
-
-      ////////////////////////
-     //  Scene & Renderer  //
+    ////////////////////////
+    //  Scene & Renderer  //
     ////////////////////////
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-    renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setClearColor( 0xffffff, 0);
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setClearColor(0xffffff, 0);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
     renderer.shadowMapSoft = true;
 
     document.body.insertBefore(renderer.domElement, document.getElementsByTagName("footer").item(0));
 
-      /////////////////
-     //   Lumiere   //
     /////////////////
-    let light = new THREE.DirectionalLight( 0xffffff, 1 );
+    //   Lumiere   //
+    /////////////////
+    let light = new THREE.DirectionalLight(0xffffff, 1);
     light.castShadow = true;
     light.position.set(0, 3, 2);
     light.target.position.set(0, 0, 0);
@@ -62,15 +75,15 @@ let init = () => {
     light.shadow.camera.right = 0.5;
     light.shadow.camera.top = 0.5;
     light.shadow.camera.bottom = -0.5;
-    scene.add( light );
+    scene.add(light);
 
-    let lightAmbiant = new THREE.AmbientLight( 0x222222 );
-    scene.add( lightAmbiant );
+    let lightAmbiant = new THREE.AmbientLight(0x222222);
+    scene.add(lightAmbiant);
 
-      /////////////////
-     //  Controles  //
     /////////////////
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    //  Controles  //
+    /////////////////
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
     controls.dampingFactor = 0.25;
     controls.screenSpacePanning = false;
@@ -79,7 +92,6 @@ let init = () => {
     controls.maxPolarAngle = Math.PI / 2;
 
     renderer.render(scene, camera);
-
 };
 
 let generateFigures = (figureData) => {
