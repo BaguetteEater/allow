@@ -1,0 +1,633 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData cookie-parser
+20 silly mapToRegistry name cookie-parser
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'cookie-parser',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'cookie-parser',
+23 silly mapToRegistry   name: 'cookie-parser',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/cookie-parser
+25 silly fetchNamedPackageData debug
+26 silly mapToRegistry name debug
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'debug',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'debug',
+29 silly mapToRegistry   name: 'debug',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/debug
+31 silly fetchNamedPackageData express
+32 silly mapToRegistry name express
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'express',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'express',
+35 silly mapToRegistry   name: 'express',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/express
+37 silly fetchNamedPackageData http-errors
+38 silly mapToRegistry name http-errors
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'http-errors',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'http-errors',
+41 silly mapToRegistry   name: 'http-errors',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/http-errors
+43 silly fetchNamedPackageData jade
+44 silly mapToRegistry name jade
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'jade',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'jade',
+47 silly mapToRegistry   name: 'jade',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/jade
+49 silly fetchNamedPackageData mongodb
+50 silly mapToRegistry name mongodb
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'mongodb',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   escapedName: 'mongodb',
+53 silly mapToRegistry   name: 'mongodb',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+55 silly fetchNamedPackageData morgan
+56 silly mapToRegistry name morgan
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'morgan',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   escapedName: 'morgan',
+59 silly mapToRegistry   name: 'morgan',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/morgan
+61 verbose request uri https://registry.npmjs.org/cookie-parser
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 08:45:01
+64 verbose request id 5afb4ecf2e9e900a
+65 http request GET https://registry.npmjs.org/cookie-parser
+66 verbose request uri https://registry.npmjs.org/jade
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 08:45:01
+69 http request GET https://registry.npmjs.org/jade
+70 verbose request uri https://registry.npmjs.org/morgan
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 08:45:01
+73 http request GET https://registry.npmjs.org/morgan
+74 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+75 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+76 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+77 verbose request uri https://registry.npmjs.org/http-errors
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 08:45:01
+80 verbose etag W/"5819913cac1990b715a1fb1d3d0fef32"
+81 verbose lastModified Sun, 27 May 2018 04:03:39 GMT
+82 http request GET https://registry.npmjs.org/http-errors
+83 verbose request uri https://registry.npmjs.org/debug
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 08:45:01
+86 verbose etag W/"fba3b1e5281ea3e19e268240206ca548"
+87 verbose lastModified Sat, 26 May 2018 21:52:39 GMT
+88 http request GET https://registry.npmjs.org/debug
+89 verbose request uri https://registry.npmjs.org/express
+90 verbose request no auth needed
+91 info attempt registry request try #1 at 08:45:01
+92 verbose etag W/"e6503c8c1e99ebf156ea4c24d986347e"
+93 verbose lastModified Sun, 27 May 2018 00:12:56 GMT
+94 http request GET https://registry.npmjs.org/express
+95 verbose request uri https://registry.npmjs.org/mongodb
+96 verbose request no auth needed
+97 info attempt registry request try #1 at 08:45:02
+98 verbose etag "5af5dced-af3d7"
+99 verbose lastModified Fri, 11 May 2018 18:11:57 GMT
+100 http request GET https://registry.npmjs.org/mongodb
+101 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+102 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+103 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+104 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+105 info attempt registry request try #2 at 08:45:11
+106 http request GET https://registry.npmjs.org/cookie-parser
+107 info attempt registry request try #2 at 08:45:11
+108 http request GET https://registry.npmjs.org/jade
+109 info attempt registry request try #2 at 08:45:11
+110 http request GET https://registry.npmjs.org/morgan
+111 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+112 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+113 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+114 info attempt registry request try #2 at 08:45:12
+115 verbose etag W/"5819913cac1990b715a1fb1d3d0fef32"
+116 verbose lastModified Sun, 27 May 2018 04:03:39 GMT
+117 http request GET https://registry.npmjs.org/http-errors
+118 info attempt registry request try #2 at 08:45:12
+119 verbose etag W/"fba3b1e5281ea3e19e268240206ca548"
+120 verbose lastModified Sat, 26 May 2018 21:52:39 GMT
+121 http request GET https://registry.npmjs.org/debug
+122 info attempt registry request try #2 at 08:45:12
+123 verbose etag W/"e6503c8c1e99ebf156ea4c24d986347e"
+124 verbose lastModified Sun, 27 May 2018 00:12:56 GMT
+125 http request GET https://registry.npmjs.org/express
+126 info attempt registry request try #2 at 08:45:12
+127 verbose etag "5af5dced-af3d7"
+128 verbose lastModified Fri, 11 May 2018 18:11:57 GMT
+129 http request GET https://registry.npmjs.org/mongodb
+130 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+131 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+132 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+133 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+134 info attempt registry request try #3 at 08:46:11
+135 http request GET https://registry.npmjs.org/cookie-parser
+136 info attempt registry request try #3 at 08:46:11
+137 http request GET https://registry.npmjs.org/jade
+138 info attempt registry request try #3 at 08:46:11
+139 http request GET https://registry.npmjs.org/morgan
+140 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+140 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+140 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+140 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+140 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9)
+140 silly fetchPackageMetaData  error for cookie-parser@~1.4.4 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+140 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+140 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+140 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+140 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+140 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+140 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+140 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9) code: 'ECONNRESET' }
+141 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+141 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+141 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+141 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+141 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9)
+141 silly fetchPackageMetaData  error for jade@~1.11.0 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+141 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+141 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+141 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+141 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+141 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+141 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+141 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9) code: 'ECONNRESET' }
+142 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+142 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+142 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+142 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+142 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9)
+142 silly fetchPackageMetaData  error for morgan@~1.9.1 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+142 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+142 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+142 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+142 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+142 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+142 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+142 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9) code: 'ECONNRESET' }
+143 info attempt registry request try #3 at 08:46:12
+144 verbose etag W/"5819913cac1990b715a1fb1d3d0fef32"
+145 verbose lastModified Sun, 27 May 2018 04:03:39 GMT
+146 http request GET https://registry.npmjs.org/http-errors
+147 info attempt registry request try #3 at 08:46:12
+148 verbose etag W/"fba3b1e5281ea3e19e268240206ca548"
+149 verbose lastModified Sat, 26 May 2018 21:52:39 GMT
+150 http request GET https://registry.npmjs.org/debug
+151 info attempt registry request try #3 at 08:46:12
+152 verbose etag W/"e6503c8c1e99ebf156ea4c24d986347e"
+153 verbose lastModified Sun, 27 May 2018 00:12:56 GMT
+154 http request GET https://registry.npmjs.org/express
+155 info attempt registry request try #3 at 08:46:12
+156 verbose etag "5af5dced-af3d7"
+157 verbose lastModified Fri, 11 May 2018 18:11:57 GMT
+158 http request GET https://registry.npmjs.org/mongodb
+159 silly get cb [ 304, undefined ]
+160 verbose etag https://registry.npmjs.org/http-errors from cache
+161 verbose get saving http-errors to /Users/robitailleflo/.npm/registry.npmjs.org/http-errors/.cache.json
+162 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir not in flight; initializing
+163 silly get cb [ 304, undefined ]
+164 verbose etag https://registry.npmjs.org/debug from cache
+165 verbose get saving debug to /Users/robitailleflo/.npm/registry.npmjs.org/debug/.cache.json
+166 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir already in flight; waiting
+167 silly get cb [ 304, undefined ]
+168 verbose etag https://registry.npmjs.org/express from cache
+169 verbose get saving express to /Users/robitailleflo/.npm/registry.npmjs.org/express/.cache.json
+170 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir already in flight; waiting
+171 silly get cb [ 304, undefined ]
+172 verbose etag https://registry.npmjs.org/mongodb from cache
+173 verbose get saving mongodb to /Users/robitailleflo/.npm/registry.npmjs.org/mongodb/.cache.json
+174 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir already in flight; waiting
+175 silly resolveWithNewModule debug@2.6.9 checking installable status
+176 silly cache add args [ 'debug@~2.6.9', null ]
+177 verbose cache add spec debug@~2.6.9
+178 silly cache add parsed spec Result {
+178 silly cache add   raw: 'debug@~2.6.9',
+178 silly cache add   scope: null,
+178 silly cache add   escapedName: 'debug',
+178 silly cache add   name: 'debug',
+178 silly cache add   rawSpec: '~2.6.9',
+178 silly cache add   spec: '>=2.6.9 <2.7.0',
+178 silly cache add   type: 'range' }
+179 silly addNamed debug@>=2.6.9 <2.7.0
+180 verbose addNamed ">=2.6.9 <2.7.0" is a valid semver range for debug
+181 silly addNameRange { name: 'debug', range: '>=2.6.9 <2.7.0', hasData: false }
+182 silly mapToRegistry name debug
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry data Result {
+185 silly mapToRegistry   raw: 'debug',
+185 silly mapToRegistry   scope: null,
+185 silly mapToRegistry   escapedName: 'debug',
+185 silly mapToRegistry   name: 'debug',
+185 silly mapToRegistry   rawSpec: '',
+185 silly mapToRegistry   spec: 'latest',
+185 silly mapToRegistry   type: 'tag' }
+186 silly mapToRegistry uri https://registry.npmjs.org/debug
+187 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+188 silly fetchNamedPackageData No valid target from cache, forcing network
+189 verbose request uri https://registry.npmjs.org/mongodb
+190 verbose request no auth needed
+191 info attempt registry request try #1 at 08:46:12
+192 http request GET https://registry.npmjs.org/mongodb
+193 silly resolveWithNewModule http-errors@1.6.3 checking installable status
+194 silly cache add args [ 'http-errors@~1.6.3', null ]
+195 verbose cache add spec http-errors@~1.6.3
+196 silly cache add parsed spec Result {
+196 silly cache add   raw: 'http-errors@~1.6.3',
+196 silly cache add   scope: null,
+196 silly cache add   escapedName: 'http-errors',
+196 silly cache add   name: 'http-errors',
+196 silly cache add   rawSpec: '~1.6.3',
+196 silly cache add   spec: '>=1.6.3 <1.7.0',
+196 silly cache add   type: 'range' }
+197 silly addNamed http-errors@>=1.6.3 <1.7.0
+198 verbose addNamed ">=1.6.3 <1.7.0" is a valid semver range for http-errors
+199 silly addNameRange { name: 'http-errors', range: '>=1.6.3 <1.7.0', hasData: false }
+200 silly mapToRegistry name http-errors
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry data Result {
+203 silly mapToRegistry   raw: 'http-errors',
+203 silly mapToRegistry   scope: null,
+203 silly mapToRegistry   escapedName: 'http-errors',
+203 silly mapToRegistry   name: 'http-errors',
+203 silly mapToRegistry   rawSpec: '',
+203 silly mapToRegistry   spec: 'latest',
+203 silly mapToRegistry   type: 'tag' }
+204 silly mapToRegistry uri https://registry.npmjs.org/http-errors
+205 verbose addNameRange registry:https://registry.npmjs.org/http-errors not in flight; fetching
+206 silly resolveWithNewModule express@4.16.3 checking installable status
+207 silly cache add args [ 'express@~4.16.1', null ]
+208 verbose cache add spec express@~4.16.1
+209 silly cache add parsed spec Result {
+209 silly cache add   raw: 'express@~4.16.1',
+209 silly cache add   scope: null,
+209 silly cache add   escapedName: 'express',
+209 silly cache add   name: 'express',
+209 silly cache add   rawSpec: '~4.16.1',
+209 silly cache add   spec: '>=4.16.1 <4.17.0',
+209 silly cache add   type: 'range' }
+210 silly addNamed express@>=4.16.1 <4.17.0
+211 verbose addNamed ">=4.16.1 <4.17.0" is a valid semver range for express
+212 silly addNameRange { name: 'express', range: '>=4.16.1 <4.17.0', hasData: false }
+213 silly mapToRegistry name express
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry data Result {
+216 silly mapToRegistry   raw: 'express',
+216 silly mapToRegistry   scope: null,
+216 silly mapToRegistry   escapedName: 'express',
+216 silly mapToRegistry   name: 'express',
+216 silly mapToRegistry   rawSpec: '',
+216 silly mapToRegistry   spec: 'latest',
+216 silly mapToRegistry   type: 'tag' }
+217 silly mapToRegistry uri https://registry.npmjs.org/express
+218 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+219 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+220 verbose get https://registry.npmjs.org/debug not expired, no request
+221 silly addNameRange number 2 { name: 'debug', range: '>=2.6.9 <2.7.0', hasData: true }
+222 silly addNameRange versions [ 'debug',
+222 silly addNameRange   [ '0.0.1',
+222 silly addNameRange     '0.1.0',
+222 silly addNameRange     '0.2.0',
+222 silly addNameRange     '0.3.0',
+222 silly addNameRange     '0.4.0',
+222 silly addNameRange     '0.4.1',
+222 silly addNameRange     '0.5.0',
+222 silly addNameRange     '0.6.0',
+222 silly addNameRange     '0.7.0',
+222 silly addNameRange     '0.7.1',
+222 silly addNameRange     '0.7.2',
+222 silly addNameRange     '0.7.3',
+222 silly addNameRange     '0.7.4',
+222 silly addNameRange     '0.8.0',
+222 silly addNameRange     '0.8.1',
+222 silly addNameRange     '1.0.0',
+222 silly addNameRange     '1.0.1',
+222 silly addNameRange     '1.0.2',
+222 silly addNameRange     '1.0.3',
+222 silly addNameRange     '1.0.4',
+222 silly addNameRange     '2.0.0',
+222 silly addNameRange     '2.1.0',
+222 silly addNameRange     '2.1.1',
+222 silly addNameRange     '2.1.2',
+222 silly addNameRange     '2.1.3',
+222 silly addNameRange     '2.2.0',
+222 silly addNameRange     '2.3.0',
+222 silly addNameRange     '2.3.1',
+222 silly addNameRange     '2.3.2',
+222 silly addNameRange     '2.3.3',
+222 silly addNameRange     '2.4.0',
+222 silly addNameRange     '2.4.1',
+222 silly addNameRange     '2.4.2',
+222 silly addNameRange     '2.4.3',
+222 silly addNameRange     '2.4.4',
+222 silly addNameRange     '2.4.5',
+222 silly addNameRange     '2.5.0',
+222 silly addNameRange     '2.5.1',
+222 silly addNameRange     '2.5.2',
+222 silly addNameRange     '2.6.0',
+222 silly addNameRange     '2.6.1',
+222 silly addNameRange     '2.6.2',
+222 silly addNameRange     '2.6.3',
+222 silly addNameRange     '2.6.4',
+222 silly addNameRange     '2.6.5',
+222 silly addNameRange     '2.6.6',
+222 silly addNameRange     '2.6.7',
+222 silly addNameRange     '2.6.8',
+222 silly addNameRange     '1.0.5',
+222 silly addNameRange     '3.0.0',
+222 silly addNameRange     '3.0.1',
+222 silly addNameRange     '2.6.9',
+222 silly addNameRange     '3.1.0' ] ]
+223 silly addNamed debug@2.6.9
+224 verbose addNamed "2.6.9" is a plain semver version for debug
+225 verbose get https://registry.npmjs.org/http-errors not expired, no request
+226 silly addNameRange number 2 { name: 'http-errors', range: '>=1.6.3 <1.7.0', hasData: true }
+227 silly addNameRange versions [ 'http-errors',
+227 silly addNameRange   [ '0.0.1',
+227 silly addNameRange     '1.0.0',
+227 silly addNameRange     '1.0.1',
+227 silly addNameRange     '1.1.0',
+227 silly addNameRange     '1.2.0',
+227 silly addNameRange     '1.2.1',
+227 silly addNameRange     '1.2.2',
+227 silly addNameRange     '1.2.3',
+227 silly addNameRange     '1.2.4',
+227 silly addNameRange     '1.2.5',
+227 silly addNameRange     '1.2.6',
+227 silly addNameRange     '1.2.7',
+227 silly addNameRange     '1.2.8',
+227 silly addNameRange     '1.3.0',
+227 silly addNameRange     '1.3.1',
+227 silly addNameRange     '1.4.0',
+227 silly addNameRange     '1.5.0',
+227 silly addNameRange     '1.5.1',
+227 silly addNameRange     '1.6.0',
+227 silly addNameRange     '1.6.1',
+227 silly addNameRange     '1.6.2',
+227 silly addNameRange     '1.6.3' ] ]
+228 silly addNamed http-errors@1.6.3
+229 verbose addNamed "1.6.3" is a plain semver version for http-errors
+230 verbose get https://registry.npmjs.org/express not expired, no request
+231 silly addNameRange number 2 { name: 'express', range: '>=4.16.1 <4.17.0', hasData: true }
+232 silly addNameRange versions [ 'express',
+232 silly addNameRange   [ '0.14.0',
+232 silly addNameRange     '0.14.1',
+232 silly addNameRange     '1.0.0',
+232 silly addNameRange     '1.0.1',
+232 silly addNameRange     '1.0.2',
+232 silly addNameRange     '1.0.3',
+232 silly addNameRange     '1.0.4',
+232 silly addNameRange     '1.0.5',
+232 silly addNameRange     '1.0.6',
+232 silly addNameRange     '1.0.7',
+232 silly addNameRange     '1.0.8',
+232 silly addNameRange     '2.0.0',
+232 silly addNameRange     '2.1.0',
+232 silly addNameRange     '2.1.1',
+232 silly addNameRange     '2.2.0',
+232 silly addNameRange     '2.2.1',
+232 silly addNameRange     '2.2.2',
+232 silly addNameRange     '2.3.0',
+232 silly addNameRange     '2.3.1',
+232 silly addNameRange     '2.3.2',
+232 silly addNameRange     '2.3.3',
+232 silly addNameRange     '2.3.4',
+232 silly addNameRange     '2.3.5',
+232 silly addNameRange     '2.3.6',
+232 silly addNameRange     '2.3.7',
+232 silly addNameRange     '2.3.8',
+232 silly addNameRange     '2.3.9',
+232 silly addNameRange     '2.3.10',
+232 silly addNameRange     '2.3.11',
+232 silly addNameRange     '2.3.12',
+232 silly addNameRange     '2.4.0',
+232 silly addNameRange     '2.4.1',
+232 silly addNameRange     '2.4.2',
+232 silly addNameRange     '2.4.3',
+232 silly addNameRange     '2.4.4',
+232 silly addNameRange     '2.4.5',
+232 silly addNameRange     '2.4.6',
+232 silly addNameRange     '2.4.7',
+232 silly addNameRange     '2.5.0',
+232 silly addNameRange     '2.5.1',
+232 silly addNameRange     '2.5.2',
+232 silly addNameRange     '2.5.3',
+232 silly addNameRange     '2.5.4',
+232 silly addNameRange     '2.5.5',
+232 silly addNameRange     '2.5.6',
+232 silly addNameRange     '2.5.7',
+232 silly addNameRange     '2.5.8',
+232 silly addNameRange     '2.5.9',
+232 silly addNameRange     '2.5.10',
+232 silly addNameRange     '2.5.11',
+232 silly addNameRange     '3.0.0',
+232 silly addNameRange     '3.0.1',
+232 silly addNameRange     '3.0.2',
+232 silly addNameRange     '3.0.3',
+232 silly addNameRange     '3.0.4',
+232 silly addNameRange     '3.0.5',
+232 silly addNameRange     '3.0.6',
+232 silly addNameRange     '3.1.0',
+232 silly addNameRange     '3.1.1',
+232 silly addNameRange     '3.1.2',
+232 silly addNameRange     '3.2.0',
+232 silly addNameRange     '3.2.1',
+232 silly addNameRange     '3.2.2',
+232 silly addNameRange     '3.2.3',
+232 silly addNameRange     '3.2.4',
+232 silly addNameRange     '3.2.5',
+232 silly addNameRange     '3.2.6',
+232 silly addNameRange     '3.3.0',
+232 silly addNameRange     '3.3.1',
+232 silly addNameRange     '3.3.2',
+232 silly addNameRange     '3.3.3',
+232 silly addNameRange     '3.3.4',
+232 silly addNameRange     '3.3.5',
+232 silly addNameRange     '3.3.6',
+232 silly addNameRange     '1.0.0-beta',
+232 silly addNameRange     '1.0.0-beta2',
+232 silly addNameRange     '1.0.0-rc',
+232 silly addNameRange     '1.0.0-rc2',
+232 silly addNameRange     '1.0.0-rc3',
+232 silly addNameRange     '1.0.0-rc4',
+232 silly addNameRange     '2.0.0-beta',
+232 silly addNameRange     '2.0.0-beta2',
+232 silly addNameRange     '2.0.0-beta3',
+232 silly addNameRange     '2.0.0-rc',
+232 silly addNameRange     '2.0.0-rc2',
+232 silly addNameRange     '2.0.0-rc3',
+232 silly addNameRange     '3.0.0-alpha1',
+232 silly addNameRange     '3.0.0-alpha2',
+232 silly addNameRange     '3.0.0-alpha3',
+232 silly addNameRange     '3.0.0-alpha4',
+232 silly addNameRange     '3.0.0-alpha5',
+232 silly addNameRange     '3.0.0-beta1',
+232 silly addNameRange     '3.0.0-beta2',
+232 silly addNameRange     '3.0.0-beta3',
+232 silly addNameRange     '3.0.0-beta4',
+232 silly addNameRange     '3.0.0-beta6',
+232 silly addNameRange     '3.0.0-beta7',
+232 silly addNameRange     '3.0.0-rc1',
+232 silly addNameRange     '3.0.0-rc2',
+232 silly addNameRange     '3.0.0-rc3',
+232 silly addNameRange     ... 159 more items ] ]
+233 silly addNamed express@4.16.3
+234 verbose addNamed "4.16.3" is a plain semver version for express
+235 silly cache afterAdd debug@2.6.9
+236 verbose afterAdd /Users/robitailleflo/.npm/debug/2.6.9/package/package.json not in flight; writing
+237 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir not in flight; initializing
+238 silly cache afterAdd http-errors@1.6.3
+239 verbose afterAdd /Users/robitailleflo/.npm/http-errors/1.6.3/package/package.json not in flight; writing
+240 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir not in flight; initializing
+241 silly cache afterAdd express@4.16.3
+242 verbose afterAdd /Users/robitailleflo/.npm/express/4.16.3/package/package.json not in flight; writing
+243 verbose correctMkdir /Users/robitailleflo/.npm correctMkdir not in flight; initializing
+244 verbose afterAdd /Users/robitailleflo/.npm/debug/2.6.9/package/package.json written
+245 verbose afterAdd /Users/robitailleflo/.npm/http-errors/1.6.3/package/package.json written
+246 verbose afterAdd /Users/robitailleflo/.npm/express/4.16.3/package/package.json written
+247 info attempt registry request try #2 at 08:46:22
+248 http request GET https://registry.npmjs.org/mongodb
+249 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+250 info attempt registry request try #3 at 08:47:22
+251 http request GET https://registry.npmjs.org/mongodb
+252 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+252 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+252 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+252 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+252 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+252 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+252 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+252 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+252 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+252 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+252 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9)
+252 silly fetchPackageMetaData  error for mongodb@^3.2.5 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+252 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+252 silly fetchPackageMetaData     at ClientRequest.g (events.js:292:16)
+252 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+252 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+252 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+252 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+252 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+252 silly fetchPackageMetaData     at connectErrorNT (net.js:1025:8)
+252 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+252 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:104:9) code: 'ECONNRESET' }
+253 silly rollbackFailedOptional Starting
+254 silly rollbackFailedOptional Finishing
+255 silly runTopLevelLifecycles Finishing
+256 silly install printInstalled
+257 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+257 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+257 verbose stack     at ClientRequest.g (events.js:292:16)
+257 verbose stack     at emitOne (events.js:96:13)
+257 verbose stack     at ClientRequest.emit (events.js:188:7)
+257 verbose stack     at Socket.socketErrorListener (_http_client.js:310:9)
+257 verbose stack     at emitOne (events.js:96:13)
+257 verbose stack     at Socket.emit (events.js:188:7)
+257 verbose stack     at connectErrorNT (net.js:1025:8)
+257 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+257 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+258 verbose cwd /Users/robitailleflo/Desktop/Compiegne/Cours/S2-Printemps/SI28/SI28-Projet/allow
+259 error Darwin 17.7.0
+260 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+261 error node v6.11.5
+262 error npm  v3.10.10
+263 error code ECONNRESET
+264 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND cache-iutl.univ-artois.fr cache-iutl.univ-artois.fr:3128
+265 error network This is most likely not a problem with npm itself
+265 error network and is related to network connectivity.
+265 error network In most cases you are behind a proxy or have bad network settings.
+265 error network
+265 error network If you are behind a proxy, please make sure that the
+265 error network 'proxy' config is set properly.  See: 'npm help config'
+266 verbose exit [ 1, true ]
