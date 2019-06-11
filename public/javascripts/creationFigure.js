@@ -24,7 +24,8 @@ loader.load('./fonts/Roboto_Regular.json', (font) => {
     loadedFont = font;
     createUser();
 
-    $("#ok_link_popup").click((event) => {
+    $("#ok_link_popup1").click((event) => {
+        console.log("coucou");
 
         let genre = "";
 
@@ -34,6 +35,7 @@ loader.load('./fonts/Roboto_Regular.json', (font) => {
             data: { "questionId" : 1, "attributes" : {"genre" : genre}},
             dataType: "json",
         }).done((figureData) => {
+            console.log(figureData);
             generateFigures(figureData);
             $("#question1").hide();
         });
