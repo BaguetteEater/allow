@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Miroir liquide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../public/stylesheets/waterStyle.css">
+        <script type="text/javascript" src="../public/javascripts/lib/dat.gui.js"></script>
+        <script type="text/javascript" src="../public/javascripts/lib/stats.min.js"></script>
+        <script type="text/javascript" src="../public/javascripts/lib/three.js"></script>
+        <script type="text/javascript" src="../public/javascripts/lib/Detector.js"></script>
+        <script type="text/javascript" src="../public/javascripts/lib/OrbitControls.js"></script>
+        <script type="text/javascript" src="../public/javascripts/OpenBoxBufferGeometry.js"></script>
+        <script type="text/javascript" src="../public/javascripts/LightHelper.js"></script>
+        <script type="text/javascript" src="../public/javascripts/shaders.js"></script>
+        <script type="text/javascript" src="../public/javascripts/ShaderPass.js"></script>
+        <script type="text/javascript" src="../public/javascripts/WaterInfo.js"></script>
+        <script type="text/javascript" src="../public/javascripts/CausticsInfo.js"></script>
+        <script type="text/javascript" src="../public/javascripts/main.js"></script>
+        <script type="text/javascript" src="../public/javascripts/lib/jquery.min.js"></script>
+        <script>
+        // initialize and setup facebook js sdk
+        window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '321702415175701', //'626181254509424',
+              xfbml      : true,
+              version    : 'v2.5'
+            });
+
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    document.getElementById('status').innerHTML = 'We are connected.';
+                    document.getElementById('login').style.visibility = 'hidden';
+                } else if (response.status === 'not_authorized') {
+                    document.getElementById('status').innerHTML = 'We are not logged in.'
+                } else {
+                    document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+                }
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        
+        // login with facebook with extra permissions
+        function login() {
+            FB.login(function(response) {
+                if (response.status === 'connected') {
+                    document.getElementById('status').innerHTML = 'We are connected.';
+                    document.getElementById('login').style.visibility = 'hidden';
+                } else if (response.status === 'not_authorized') {
+                    document.getElementById('status').innerHTML = 'We are not logged in.'
+                } else {
+                    document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+                }
+            }, {scope: 'email'});
+        }
+        
+        // getting basic user info
+        function getInfo() {
+
+            FB.api('/me', {fields: 'last_name,id'}, function(response) {
+                console.log(response.id);
+                var user_id=response.id;
+                $("#info").hide();
+
+
+                        FB.api('/'+user_id+'/picture?redirect=false&width=700&height=700', 'GET', {}, function(response) {
+                             if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+                            app = new App(response.data.url); // './img/tile.jpg'
+                            $("div .dg").hide();
+                            app.startAnim();
+                            console.log("response", response); 
+                    }); 
+            }); 
+        }
+
+    </script>
+
+    </head>
+
+    <body>
+       
+        <div id = "container"></div>
+        <div id="status"></div>
+    <button id="info" onclick="getInfo()">Get Info</button>
+    <button onclick="login()" id="login">Login</button>
+    </body>
+    <audio id="notification">
+    <source src="../public/samples/messenger.mp3"></source>
+    </audio>
+</html>
