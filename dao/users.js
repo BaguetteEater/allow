@@ -111,7 +111,7 @@ exports.addGraphic = (userId, graphic, next) => {
             client
                 .db(dbName)
                 .collection(dbCollectionName)
-                .findOneAndUpdate(ObjectID(userId), { $addToSet: {graphics: graphic} }, { returnOriginal: false })
+                .findOneAndUpdate({ _id: ObjectID(userId) }, { $addToSet: {graphics: graphic} }, { returnOriginal: false })
                 .then((user) => {
                     next(200, user.value);
                     client.close();
@@ -135,7 +135,7 @@ exports.addSound = function (userId, sound, next) {
             client
                 .db(dbName)
                 .collection(dbCollectionName)
-                .findOneAndUpdate(ObjectID(userId), { $addToSet: {sounds: sound} }, { returnOriginal: false })
+                .findOneAndUpdate({ _id: ObjectID(userId) }, { $addToSet: {sounds: sound} }, { returnOriginal: false })
                 .then((user) => {
                     next(200, user.value);
                     client.close();

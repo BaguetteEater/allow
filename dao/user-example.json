@@ -60,7 +60,7 @@
   ],
   "sounds": [
     {
-      "type": "created",
+      "type": "creation",
       "attributes": {
         "frequency": 2000
       },
