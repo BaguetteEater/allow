@@ -83,7 +83,7 @@ footer{
     position: absolute;
     bottom: 0;
     height: 50px;
-    display: none;
+    
 }
 
 #col-footer{
@@ -305,6 +305,20 @@ input[type=radio]:not(old):checked + label > span:before {
 
 
 /******************** PAGE CREA ********************/
-#intro{
-    color: aliceblue;
+#cercleChroma{
+    height: 200px;
+
+}
+
+#cercleChroma svg{
+    height: 100%;
+    width: auto;
+}
+
+#cercleChroma svg path{
+    cursor: pointer;
+}
+
+.icon.active{ 
+    box-shadow: inset 1px 1px white, inset -1px -1px #777;
 }
