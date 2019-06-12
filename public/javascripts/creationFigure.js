@@ -5,28 +5,29 @@ let controls;
 let loadedFont;
 let loader = new THREE.FontLoader();
 
+let userId;
+
 let listFigure = [];
 
 let init = () => {
-
-      ////////////////////////
-     //  Scene & Renderer  //
+    ////////////////////////
+    //  Scene & Renderer  //
     ////////////////////////
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-    renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setClearColor( 0xffffff, 0);
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setClearColor(0xffffff, 0);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
     renderer.shadowMapSoft = true;
 
     document.body.insertBefore(renderer.domElement, document.getElementsByTagName("footer").item(0));
 
-      /////////////////
-     //   Lumiere   //
     /////////////////
-    let light = new THREE.DirectionalLight( 0xffffff, 1 );
+    //   Lumiere   //
+    /////////////////
+    let light = new THREE.DirectionalLight(0xffffff, 1);
     light.castShadow = true;
     light.position.set(0, 3, 2);
     light.target.position.set(0, 0, 0);
@@ -38,15 +39,15 @@ let init = () => {
     light.shadow.camera.right = 0.5;
     light.shadow.camera.top = 0.5;
     light.shadow.camera.bottom = -0.5;
-    scene.add( light );
+    scene.add(light);
 
-    let lightAmbiant = new THREE.AmbientLight( 0x222222 );
-    scene.add( lightAmbiant );
+    let lightAmbiant = new THREE.AmbientLight(0x222222);
+    scene.add(lightAmbiant);
 
-      /////////////////
-     //  Controles  //
     /////////////////
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    //  Controles  //
+    /////////////////
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
     controls.dampingFactor = 0.25;
     controls.screenSpacePanning = false;
@@ -55,7 +56,6 @@ let init = () => {
     controls.maxPolarAngle = Math.PI / 2;
 
     renderer.render(scene, camera);
-
 };
 
 let generateFigures = (figureData) => {

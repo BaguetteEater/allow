@@ -11,7 +11,7 @@ module.exports = {
                 "color": "#FF0000"
             },
             "scale": 100,
-            "material": "truc",
+            "material": "autretruc",
             "coordinates": {
                 "x": 100,
                 "y": 100,
@@ -23,6 +23,14 @@ module.exports = {
 
     // Retourne un objet JSON "sound" sous la forme disponible dans user-example.json
     transformInSound: function (questionId, attributes) {
-         return {};
+
+        // Exemple que j'utilise pour tester
+        return {
+            "type": "creation",
+            "attributes": {
+                "frequency": 2000
+            },
+            "rythm": 4
+        };
     }
 };
