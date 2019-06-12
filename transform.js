@@ -13,9 +13,9 @@ module.exports = {
             "scale": 100,
             "material": "autretruc",
             "coordinates": {
-                "x": 100,
-                "y": 100,
-                "z": 100
+                "x": 1,
+                "y": 0,
+                "z": -5
             }
         }
 

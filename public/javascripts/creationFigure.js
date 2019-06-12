@@ -5,8 +5,6 @@ let controls;
 let loadedFont;
 let loader = new THREE.FontLoader();
 
-let userId;
-
 let listFigure = [];
 
 let init = () => {
