@@ -7,30 +7,6 @@ let loader = new THREE.FontLoader();
 
 let listFigure = [];
 
-loader.load('./fonts/Roboto_Regular.json', (font) => {
-    loadedFont = font;
-    init();
-
-    $("#ok_link_popup").click((event) => {
-
-        let genre = "";
-
-        $.ajax({
-            method: "POST",
-            url: "/question/michel",
-            data: { "questionId" : 1, "attributes" : {"genre" : genre}},
-            dataType: "json",
-        }).done((figureData) => {
-            generateFigures(figureData);
-            $("#question1").hide();
-        });
-        generateFigures(JSON.parse('{"_id": 123456789,"graphics": [{"type": "polygon","attributes": {"shape": "square","3D": true,"color": "#FF0000"},"scale": 100,"material": "truc","coordinates": {"x": 5,"y": -4,"z": -6}}, '
-        +'{"type": "word","attributes": {"word": "Allow c\'est vraiment cool","moving": true,"color": "#00FF00"}, "scale": 100, "material": "truc","coordinates": {"x": -3,"y": 0.5,"z": -2}}]}'));
-        $("#question1").hide();
-    });
-
-});
-
 let init = () => {
 
       ////////////////////////

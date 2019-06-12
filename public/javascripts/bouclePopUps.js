@@ -36,6 +36,12 @@ moveToNext = () => {
     moveTo(questionsIds[0]);
 };
 
+bindListenerToPopUps = () => {
+    all.forEach((questionId) => {
+        addListener(questionId);
+    })
+};
+
 // Répond à une question (la retire de la boucle)
 answer = (questionId) => {
     questionsIds = questionsIds.filter(name => name !== questionId);
@@ -49,5 +55,9 @@ questionsIds.forEach(questionId => {
     });
 });
 
+
 hideAll();
 moveToNext();
+
+createUser();
+bindListenerToPopUps();
