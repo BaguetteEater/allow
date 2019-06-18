@@ -47,6 +47,10 @@ let generateAttribute = (questionNum) => {
         case "3": return { birth : getQ3Attr()+"" };
         case "4": return {};
         case "5": return {};
+        case "6": return {};
+        case "7": return {};
+        case "8": return {};
+        case "9": return {};
 
     }
 };
