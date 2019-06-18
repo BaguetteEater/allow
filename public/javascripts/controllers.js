@@ -43,6 +43,10 @@ addListener = (questionId) => {
 let generateAttribute = (questionNum) => {
     switch (questionNum) {
         case "1": return { genre : getQ1Attr()+"" };
+        case "2": return { name : getQ2Attr()+"" };
+        case "3": return { birth : getQ3Attr()+"" };
+        case "4": return {};
+        case "5": return {};
 
     }
 };
@@ -53,8 +57,18 @@ let getQ1Attr = () => {
         genre = "h";
     else if($("#femme")[0].checked)
         genre = "f";
-    else if($("#nb")[0].checked)
+    else if($("#nonbinaire")[0].checked)
         genre = "nb";
     console.log(genre);
     return genre;
 };
+
+let getQ2Attr = () => {
+    let prenom = $("#prenom")[0].value;
+    return prenom;
+};
+
+let getQ3Attr = () => {
+    let dateOfBirth = $("#date");
+    return dateOfBirth;
+}

@@ -15,6 +15,7 @@ let init = () => {
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
     renderer = new THREE.WebGLRenderer({alpha: true});
+
     renderer.setClearColor(0xffffff, 0);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
@@ -103,8 +104,7 @@ let generateFigures = (figureData) => {
 };
 
 let buildPolygon = (shape, scale) => {
-
-    if(shape === "square")
+    if(shape === "cube")
         return new THREE.BoxGeometry(scale/150, scale/150, scale/150, 2, 2, 2);
 };
 

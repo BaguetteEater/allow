@@ -44,6 +44,8 @@ router.post('/question/:userId', (req, res) => {
     const attributes = req.body.attributes;
 
     const graphic = transform.transformInGraphic(questionId, attributes);
+    console.log("bonojur");
+    console.log(graphic);
     users.addGraphic(userId, graphic, (status, msg) => {
         if (status === 200)
             res.header('Content-Type', 'application/json');
@@ -53,11 +55,11 @@ router.post('/question/:userId', (req, res) => {
     });
 
     const sound = transform.transformInSound(questionId, attributes);
-    users.addSound(userId, sound, (status, msg) => {
+    /*users.addSound(userId, sound, (status, msg) => {
         if (status === 200)
             res.header('Content-Type', 'application/json');
         res.status(status).send(msg);
-    });
+    });*/
 });
 
 

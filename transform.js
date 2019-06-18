@@ -88,7 +88,7 @@ module.exports = {
                     "type": "word",
                     "properties":
                         {
-                            "word": "newname",
+                            "word": newname,
                             "moving":true,
                             "3D": true,
                             "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
@@ -132,9 +132,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": 0,
+                                    "y": 1,
+                                    "z": 2
                                 }
                         };
 
@@ -151,9 +151,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": 0,
+                                    "y": 1,
+                                    "z": 2
                                 }
                         };
 
@@ -170,9 +170,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": 0,
+                                    "y": 1,
+                                    "z": 2
                                 }
                         };
                 }
@@ -190,9 +190,9 @@ module.exports = {
                         "material": "truc",   // need liste matériaux
                         "coordinates":
                             {
-                                "x": 0,       // première question donc première forme au centre
-                                "y": 0,
-                                "z": 0
+                                "x": 2,
+                                "y": 3,
+                                "z": 1
                             }
                     }
                 }
@@ -209,9 +209,9 @@ module.exports = {
                         "material": "truc",   // need liste matériaux
                         "coordinates":
                             {
-                                "x": 0,       // première question donc première forme au centre
-                                "y": 0,
-                                "z": 0
+                                "x": 2,
+                                "y": 3,
+                                "z": 1
                             }
                     }
                 }
@@ -228,9 +228,9 @@ module.exports = {
                         "material": "truc",   // need liste matériaux
                         "coordinates":
                             {
-                                "x": 0,       // première question donc première forme au centre
-                                "y": 0,
-                                "z": 0
+                                "x": 2,
+                                "y": 3,
+                                "z": 1
                             }
                     }
                 }
@@ -247,14 +247,14 @@ module.exports = {
                         "material": "truc",   // need liste matériaux
                         "coordinates":
                             {
-                                "x": 0,       // première question donc première forme au centre
-                                "y": 0,
-                                "z": 0
+                                "x": 2,
+                                "y": 3,
+                                "z": 1
                             }
                     }
                 }
-                let current = new Date().getFullYear();                                                               //BIRTHDAY.YEAR
-                for (let i = 1; i < (current-year)+1; i++) {
+                let current = new Date().getFullYear();//BIRTHDAY.YEAR
+                //for (let i = 1; i < (current-year); i++) {
                     return{
                         "type": "polygon",
                         "properties":
@@ -267,13 +267,12 @@ module.exports = {
                         "material": "truc",   // need liste matériaux
                         "coordinates":
                             {
-                                "x": 0,       // première question donc première forme au centre
-                                "y": 0,
-                                "z": 0
+                                "x": 1.5,       // première question donc première forme au centre
+                                "y": -1.5,
+                                "z": 0.5
                             }
-                    }
-                }
-                break;
+                    };
+                //}
 
             case 4:
                 return{
