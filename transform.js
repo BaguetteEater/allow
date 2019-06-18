@@ -352,7 +352,7 @@ module.exports = {
 
             case 8:
                 switch(attributes.interest){
-                    case "sport":
+                    case "avion":
                         return{
                             "type": "polygon",
                             "properties":
@@ -371,7 +371,7 @@ module.exports = {
                                 }
                         };
 
-                    case "musique":
+                    case "basket":
                         return{
                             "type": "polygon",
                             "properties":
@@ -390,7 +390,7 @@ module.exports = {
                                 }
                         };
 
-                    case "voyage":
+                    case "bateau":
                         return{
                             "type": "polygon",
                             "properties":
@@ -409,7 +409,7 @@ module.exports = {
                                 }
                         };
 
-                    case "lecture":
+                    case "bowling":
                         return{
                             "type": "polygon",
                             "properties":
@@ -428,7 +428,7 @@ module.exports = {
                                 }
                         };
 
-                    case "cuisine":
+                    case "chat":
                         return{
                             "type": "polygon",
                             "properties":
@@ -447,7 +447,7 @@ module.exports = {
                                 }
                         };
 
-                    case "jeux-vidéo":
+                    case "chien":
                         return{
                             "type": "polygon",
                             "properties":
@@ -466,7 +466,7 @@ module.exports = {
                                 }
                         };
 
-                    case "théatre":
+                    case "chocolat":
                         return{
                             "type": "polygon",
                             "properties":
@@ -485,7 +485,7 @@ module.exports = {
                                 }
                         };
 
-                    case "animaux":
+                    case "courir":
                         return{
                             "type": "polygon",
                             "properties":
@@ -504,7 +504,7 @@ module.exports = {
                                 }
                         };
 
-                    case "jardinage":
+                    case "danse":
                         return{
                             "type": "polygon",
                             "properties":
@@ -523,7 +523,7 @@ module.exports = {
                                 }
                         };
 
-                    case "apéro":
+                    case "dessiner":
                         return{
                             "type": "polygon",
                             "properties":
@@ -542,7 +542,7 @@ module.exports = {
                                 }
                         };
 
-                    case "clubbing":
+                    case "foot":
                         return{
                             "type": "polygon",
                             "properties":
@@ -561,7 +561,311 @@ module.exports = {
                                 }
                         };
 
-                    case "cinéma":
+                    case "guitare":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "jeu":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "lit":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "livre":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "microscope":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "muscu":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "nager":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "nature":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "origami":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "peluche":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "piano":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "poisson":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "poulet":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "robot":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "saturne":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "tenis":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": 0,       // première question donc première forme au centre
+                                    "y": 0,
+                                    "z": 0
+                                }
+                        };
+
+                    case "train":
                         return{
                             "type": "polygon",
                             "properties":
