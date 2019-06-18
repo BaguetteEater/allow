@@ -40,13 +40,15 @@ router.delete('/users/:userId', (req, res) => {
 // Body sous la forme: { "questionId": 1, "attributes": {} }
 router.post('/question/:userId', (req, res) => {
     const userId = req.params.userId;
-    const questionId = req.body.questionId;
+    const questionId = parseInt(req.body.questionId);
     const attributes = req.body.attributes;
 
     const graphic = transform.transformInGraphic(questionId, attributes);
     users.addGraphic(userId, graphic, (status, msg) => {
         if (status === 200)
             res.header('Content-Type', 'application/json');
+        console.log(status);
+        console.log(msg);
         res.status(status).send(msg);
     });
 

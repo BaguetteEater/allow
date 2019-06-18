@@ -2,6 +2,7 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let morgan = require('morgan');
+let bodyParser = require('body-parser');
 
 let indexRouter = require('./routes/index');
 
@@ -12,8 +13,9 @@ app.use("/public/images", express.static(__dirname + '/public/images'));
 app.use("/public/javascripts", express.static(__dirname + '/public/javascripts'));
 app.use("/public/stylesheets", express.static(__dirname + '/public/stylesheets'));
 app.use(express.static('views'));
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+
+app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cookieParser());
 app.use(morgan('combined'));

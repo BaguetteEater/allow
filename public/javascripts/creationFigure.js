@@ -63,17 +63,17 @@ let generateFigures = (figureData) => {
     for(let i = 0; i < figureData.graphics.length; i++) {
 
         let type = figureData.graphics[i].type;
-        let color = figureData.graphics[i].attributes.color;
+        let color = figureData.graphics[i].properties.color;
         let coordonnees = figureData.graphics[i].coordinates;
         let geometry;
 
         switch (type) {
             case 'word' :
-                geometry = buildWord(figureData.graphics[i].attributes.word, figureData.graphics[i].scale);
+                geometry = buildWord(figureData.graphics[i].properties.word, figureData.graphics[i].scale);
                 break;
 
             case 'polygon' :
-                geometry = buildPolygon(figureData.graphics[i].attributes.shape, figureData.graphics[i].scale);
+                geometry = buildPolygon(figureData.graphics[i].properties.shape, figureData.graphics[i].scale);
                 break;
 
             case 'glow' :
