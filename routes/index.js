@@ -42,9 +42,8 @@ router.post('/question/:userId', (req, res) => {
     const userId = req.params.userId;
     const questionId = parseInt(req.body.questionId);
     const attributes = req.body.attributes;
-
+    console.log(questionId);
     const graphic = transform.transformInGraphic(questionId, attributes);
-    console.log("bonojur");
     console.log(graphic);
     users.addGraphic(userId, graphic, (status, msg) => {
         if (status === 200)

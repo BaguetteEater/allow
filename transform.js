@@ -25,7 +25,6 @@ module.exports = {
                         };
 
                     case "f":
-                        console.log("couou");
                         return{
                             "type": "polygon",
                             "properties":
@@ -350,6 +349,17 @@ module.exports = {
                         }
                 };
 
+            case 7:
+                console.log("coucou");
+                return{
+                    "type": "glow",
+                    "properties":
+                        {
+                            "color": attributes.glowingColor
+                        }
+            };
+
+
             case 8:
                 switch(attributes.interest){
                     case "avion":
@@ -365,9 +375,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -384,9 +394,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -403,9 +413,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -422,9 +432,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -441,9 +451,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -460,9 +470,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -479,9 +489,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -498,9 +508,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -517,9 +527,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -536,9 +546,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -555,9 +565,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -574,9 +584,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -593,9 +603,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -612,9 +622,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -631,9 +641,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -650,9 +660,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -669,9 +679,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -688,9 +698,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -707,9 +717,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -726,9 +736,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -745,9 +755,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -764,9 +774,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -783,9 +793,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -802,9 +812,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -821,9 +831,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -840,9 +850,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -859,9 +869,9 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
 
@@ -878,9 +888,85 @@ module.exports = {
                             "material": "truc",   // need liste matériaux
                             "coordinates":
                                 {
-                                    "x": 0,       // première question donc première forme au centre
-                                    "y": 0,
-                                    "z": 0
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
+                                }
+                        };
+
+                    case "velo":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
+                                }
+                        };
+
+                    case "video":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
+                                }
+                        };
+
+                    case "voiture":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),       // première question donc première forme au centre
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
+                                }
+                        };
+
+                    case "zen":
+                        return{
+                            "type": "polygon",
+                            "properties":
+                                {
+                                    "shape": "cube",
+                                    "3D": true,
+                                    "color": '#' + (function co(lor){   return (lor +=[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])&& (lor.length === 6) ?  lor : co(lor); })('')
+                                },
+                            "scale": 20,        //pourcentage
+                            "material": "truc",   // need liste matériaux
+                            "coordinates":
+                                {
+                                    "x": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "y": (function rand2(){return (Math.random()*(2+2))+(-2)})(),
+                                    "z": (function rand2(){return (Math.random()*(2+2))+(-2)})()
                                 }
                         };
                 }

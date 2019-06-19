@@ -5,6 +5,14 @@ let controls;
 let loadedFont;
 let loader = new THREE.FontLoader();
 
+let isGlowingEnabled = false;
+let glowingColor;
+
+let isNameHere = false;
+let name;
+let mvt = 0.017;
+let direction = "xy";
+
 let listFigure = [];
 
 let init = () => {
@@ -61,6 +69,15 @@ let generateFigures = (figureData) => {
 
     renderer.clear(true, true, true);
 
+    for(let j = 0; j < figureData.graphics.length; j++) {
+        if(figureData.graphics[j].type === 'glow') {
+            isGlowingEnabled = true;
+            glowingColor = figureData.graphics[j].properties.glowingColor;
+        }
+    }
+
+    let isWordGenerated = false;
+
     for(let i = 0; i < figureData.graphics.length; i++) {
 
         let type = figureData.graphics[i].type;
@@ -71,14 +88,12 @@ let generateFigures = (figureData) => {
         switch (type) {
             case 'word' :
                 geometry = buildWord(figureData.graphics[i].properties.word, figureData.graphics[i].scale);
+                isNameHere = true;
+                isWordGenerated = true;
                 break;
 
             case 'polygon' :
                 geometry = buildPolygon(figureData.graphics[i].properties.shape, figureData.graphics[i].scale);
-                break;
-
-            case 'glow' :
-                geometry = buildGlowing();
                 break;
 
             case 'picture' :
@@ -93,11 +108,18 @@ let generateFigures = (figureData) => {
         figure.castShadow = true;
         figure.receiveShadow = true;
 
+        if(isWordGenerated)
+            name = figure;
+
+        if(isGlowingEnabled)
+            buildGlowing(figure);
+
         listFigure.push(figure);
         scene.add(figure);
 
         figure.position.set(coordonnees.x, coordonnees.y, coordonnees.z);
         camera.position.z = 5;
+        isWordGenerated = false;
     }
         renderer.render(scene, camera);
 
@@ -108,16 +130,27 @@ let buildPolygon = (shape, scale) => {
         return new THREE.BoxGeometry(scale/150, scale/150, scale/150, 2, 2, 2);
 };
 
-let buildGlowing = () => {
-    /*let spriteMaterial = new THREE.SpriteMaterial(
-        {
-            map: new THREE.ImageUtils.loadTexture( 'images/glow.png' ),
-            useScreenCoordinates: false, alignment: THREE.SpriteAlignment.center,
-            color: 0x0000ff, transparent: false, blending: THREE.AdditiveBlending
-        });
-    let sprite = new THREE.Sprite( spriteMaterial );
-    sprite.scale.set(200, 200, 1.0);
-    mesh.add(sprite);*/
+let buildGlowing = (mesh) => {
+
+    // SUPER SIMPLE GLOW EFFECT
+    // use sprite because it appears the same from all angles
+    let loader = new THREE.TextureLoader();
+
+    loader.load( 'images/glow.png', (texture) => {
+
+        let spriteMaterial = new THREE.SpriteMaterial(
+            {
+                map: texture,
+                color: "#0000ff",
+                transparent: false,
+                blending: THREE.AdditiveBlending
+            });
+
+        let sprite = new THREE.Sprite(spriteMaterial);
+        sprite.scale.set(200, 200, 1.0);
+        mesh.add(sprite);
+
+    });
 };
 
 let buildWord = (word, scale) => {
@@ -132,8 +165,44 @@ let animate = () => {
 
     requestAnimationFrame(animate);
     controls.update();
+
+    if(isNameHere && name) {
+
+        switch (direction){
+            case "xy":
+                name.position.set(name.position.x + mvt, name.position.y + mvt, name.position.z);
+                break;
+            case "xz":
+                name.position.set(name.position.x + mvt, name.position.y, name.position.z + mvt);
+                break;
+            case "yz" :
+                name.position.set(name.position.x, name.position.y+mvt, name.position.z + mvt);
+                break;
+        }
+
+        if (name.position.x > 2 || name.position.y > 2 || name.position.z > 2) {
+            mvt = -0.017;
+            changeDirection();
+        }
+
+        if (name.position.x < -2 || name.position.y < -2 || name.position.z < -2){
+            mvt = 0.017;
+            changeDirection();
+        }
+    }
+
     renderer.render(scene, camera);
 
+};
+
+let changeDirection = () => {
+    let rand = Math.floor(Math.random() * 3);
+    if(rand === 0)
+        direction = "xz";
+    else if (rand === 1)
+        direction = "xy";
+    else
+        direction = "yz";
 };
 
 animate();

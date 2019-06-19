@@ -17,7 +17,6 @@ hideAll = () => {
 };
 
 moveTo = (questionId) => {
-    console.log(questionId)
     hideAll();
     $(questionId).show();
 };

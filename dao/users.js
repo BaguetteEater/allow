@@ -117,7 +117,6 @@ exports.addGraphic = (userId, graphic, next) => {
                     client.close();
                 })
                 .catch((error) => {
-                    console.log(graphic + " " + userId);
                     console.log(" bite " + error + "coucou");
                     next(400, "An error occurred while trying to update an user's graphics");
                 });
